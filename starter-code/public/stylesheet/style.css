@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+div {
+  display: flex;
+  align-content: center;
+  margin: 10px;
+}
+
+#photos {
+  flex: display;
+  justify-content: space-between;
+}
+
+.video {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#photos {
+  opacity: 0;
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  transition: opacity 3s;
+}
+
+#photos.fade {
+  opacity: 1;
+}
